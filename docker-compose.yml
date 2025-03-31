@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  sqlmap:
+    build: .
+    container_name: sqlmap
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data:/var/sqlmap  # Mount local directory for output storage

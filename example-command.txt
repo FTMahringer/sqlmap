@@ -1,0 +1,1 @@
+docker-compose run --rm --entrypoint "" sqlmap python3 sqlmap.py -u "<site-url>" --batch
